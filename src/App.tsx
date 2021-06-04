@@ -24,16 +24,14 @@ function App() {
 
   return (
     <div className="">
-      <header className="">
-        {/* <p>{getData.confirmed.value}Hello</p>
-        <p>{getData.confirmed.detail}Hello</p>
-        <p>{getData.lastUpdate}Hello</p>
-        <p>{getData.recovered.value}Hello</p> */}
-
-      </header>
+      <div className="App">
+        <header className="App-header">
+          <h1 className="header">COVID-19 INFO</h1>
+        </header>
+      </div>
       <Cards />
       <TableData />
-
+      <footer>@ sam_cht25</footer>
     </div>
   );
 }

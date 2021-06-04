@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {fetchCountryData, fetchDailyData, fetchCountriesData} from '../src/api'
 import {Cards} from './components/cards' ;
+import {TableData} from './components/table/table';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
 
       </header>
       <Cards />
+      <TableData />
 
     </div>
   );

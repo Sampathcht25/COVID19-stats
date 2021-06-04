@@ -3,6 +3,11 @@ import axios from 'axios';
  * Fetch covid19 upto date stats
  * **/
  const apiURL = 'https://covid19.mathdro.id/api';
+ //Confirmed: https://covid19.mathdro.id/api/countries/USA/confirmed
+//Recovered: https://covid19.mathdro.id/api/countries/USA/recovered
+// Deaths: https://covid19.mathdro.id/api/countries/USA/deaths
+
+
 
 export const fetchCountryData = async(URL_param:any) => {
     let updateURL = apiURL;
@@ -52,5 +57,15 @@ export const fetchCountriesData = async() => {
         return result.data.countries.map((val:any) => val.name);
     } catch(error){
         console.log(error)
+    }
+}
+
+
+export const fetchCountryReport = async() => {
+    try {
+        const result = await axios.get('https://disease.sh/v3/covid-19/countries');
+        return result.data;
+    } catch(error) {
+        console.log(error);
     }
 }

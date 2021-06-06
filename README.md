@@ -1,3 +1,8 @@
+# Deploy status badge
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57a9fa06-ab98-42b4-9e28-212c1ee96c1f/deploy-status)](https://app.netlify.com/sites/samcht-focused-covid19-info/deploys)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

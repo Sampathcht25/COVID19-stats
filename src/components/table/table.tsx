@@ -49,13 +49,13 @@ export const TableData = () => {
                             <TableRow hover>
                                 <TableCell align="left">{val+1}</TableCell>
                                 <TableCell align="left">{key.country}</TableCell>
-                                <TableCell align="left">{key.cases}</TableCell>
-                                <TableCell align="left">{key.todayCases}</TableCell>
-                                <TableCell align="left">{key.todayDeaths}</TableCell>
-                                <TableCell align="left">{key.deaths}</TableCell>
-                                <TableCell align="left">{key.recovered}</TableCell>
-                                <TableCell align="left">{key.active}</TableCell>
-                                <TableCell align="left">{key.population}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.cases)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.todayCases)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.todayDeaths)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.deaths)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.recovered)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.active)}</TableCell>
+                                <TableCell align="left">{Intl.NumberFormat().format(key.population)}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

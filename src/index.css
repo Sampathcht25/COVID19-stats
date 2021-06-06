@@ -36,3 +36,6 @@ code {
 th {
   font-weight:700!important;
 }
+th:nth-child(2) {
+  width: 72px;
+}

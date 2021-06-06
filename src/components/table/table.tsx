@@ -34,7 +34,6 @@ export const TableData = () => {
         result()
     }, [setData]);
 
-    console.log(getData, "getData")
     
     return(
         <Grid container spacing={3} justify="center">
@@ -42,14 +41,15 @@ export const TableData = () => {
                 <Table>
                     <TableHead>
                     <TableRow>
-                        {['Country', 'Total Cases', 'Today Cases', 'Today Deaths',  'Total Deaths', 'Total Recovered', 'Active Cases', 'Population'].map((val) => (
+                        {['S.No', 'Country', 'Total Cases', 'Today Cases', 'Today Deaths',  'Total Deaths', 'Total Recovered', 'Active Cases', 'Population'].map((val) => (
                                 <TableCell>{val}</TableCell>
                             ))
                         }
                     </TableRow>
                     </TableHead>
-                    {getData && getData.map((key:any, val:any) => (
+                    {getData && getData.sort((a:any, b:any) => b.cases-a.cases).map((key:any, val:any) => (
                         <TableRow hover>
+                            <TableCell align="left">{val+1}</TableCell>
                             <TableCell align="left">{key.country}</TableCell>
                             <TableCell align="left">{key.cases}</TableCell>
                             <TableCell align="left">{key.todayCases}</TableCell>

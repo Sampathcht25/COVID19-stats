@@ -21,9 +21,6 @@ export const Cards = () => {
       fetch_Data();
     }, [setData, setReportData])
 
-    console.log(getReportData && getReportData, "getReportData====")
-
-
     return (
         <div className={'container'}>
             <Grid container spacing={3} justify="center">

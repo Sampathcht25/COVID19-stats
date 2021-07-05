@@ -1,6 +1,6 @@
 # Application Refernce URL
 
-Please visit [covid19-stats]([https://samcht-focused-covid19-info.netlify.app/](https://samcht-focused-covid19-info.netlify.app/)): [https://samcht-focused-covid19-info.netlify.app/](https://samcht-focused-covid19-info.netlify.app/)
+Please visit [covid19-stats](https://samcht-focused-covid19-info.netlify.app/):  [https://samcht-focused-covid19-info.netlify.app/](https://samcht-focused-covid19-info.netlify.app/)
 
 ## Available Scripts
 

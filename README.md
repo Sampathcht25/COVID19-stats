@@ -2,6 +2,10 @@
 
 Please visit [covid19-stats](https://samcht-focused-covid19-info.netlify.app/):  [https://samcht-focused-covid19-info.netlify.app/](https://samcht-focused-covid19-info.netlify.app/)
 
+## Web page
+
+![Web Page](./public/covid19_stats.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
